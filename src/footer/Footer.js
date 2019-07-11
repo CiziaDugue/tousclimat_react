@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Modale from '../bootstrapComponents/Modale.js'
+import Modale from '../libs/bootstrap/components/Modale.js'
 
 
 function Footer() {

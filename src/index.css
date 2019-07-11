@@ -44,7 +44,7 @@ p {
 .header {
     margin: auto;
     max-width: 600px;
-    padding-bottom: 20px;
+    padding: 10px 0 20px 0;
 }
 
 .lien {
@@ -105,9 +105,10 @@ p {
 }
 
 #foot {
-    margin: auto;
+    margin: 0 auto;
     max-width: 600px;
     background: #95c121;
+    padding: 2px 0;
 }
 
 #foot a {
@@ -118,7 +119,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 40px; /* Height of the footer, see "body" */
 }
 
 @media all and (max-width: 576px) {

@@ -1,5 +1,5 @@
 import React from "react";
-import '../src/libs/bootstrap/main.scss'
+import './libs/bootstrap/scss/bootstrap-custom.scss'
 
 import Header from '../src/header/Header.js';
 import Footer from '../src/footer/Footer.js';
