@@ -4,8 +4,9 @@ import L from 'leaflet';
 import iconGreen from './marker-icon-green-v2.png'
 import iconGreen1 from './marker-icon-green.png'
 import iconShadow from './marker-shadow.png'
+// import MarkerClusterGroup from 'react-leaflet-markercluster'
 
-var icon = L.icon({
+let icon = L.icon({
     iconRetinaUrl: iconGreen,
     iconUrl: iconGreen,
     shadowUrl: iconShadow,
@@ -15,7 +16,7 @@ var icon = L.icon({
     shadowAnchor: [12, 65],  // the same for the shadow
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
-var icon1 = L.icon({
+let icon1 = L.icon({
     iconRetinaUrl: iconGreen1,
     iconUrl: iconGreen1,
     shadowUrl: iconShadow,

@@ -4,6 +4,16 @@ import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons'
 import Button from "react-bootstrap/Button";
 
 export default class ButtonBar extends React.Component {
+    constructor(props) {
+        super(props);
+        // This binding is necessary to make `this` work in the callback
+        this.subscribe = this.subscribe.bind(this);
+    }
+
+    subscribe() {
+        return console.log('The link was clicked.');
+    }
+
     render() {
         return (
             <div className="d-flex align-items-center justify-content-between button-bar">
@@ -15,7 +25,8 @@ export default class ButtonBar extends React.Component {
                 </Button>
                 <Button
                     variant="primary"
-                    className="text-white">
+                    className="text-white"
+                    onClick={this.subscribe}>
                     Moi aussi
                     <FontAwesomeIcon
                         className="text-white ml-2"
